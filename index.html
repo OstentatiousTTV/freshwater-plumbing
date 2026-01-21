@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Freshwater Plumbing | Los Angeles</title>
+<meta name="description" content="Freshwater Plumbing in Los Angeles. Water heater installs & repairs, tankless water heaters, leak repairs, gas leak repairs, stoppages, and rough-in plumbing. Call or text (818) 605-7343.">
+
+<style>
+:root{
+  --bg:#0b0f17;
+  --panel:rgba(255,255,255,.06);
+  --panel2:rgba(255,255,255,.04);
+  --line:rgba(255,255,255,.10);
+  --text:#e5e7eb;
+  --muted:#9ca3af;
+    --accent:#facc15;
+  --accent2:#eab308;
+
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family: system-ui,-apple-system,Segoe UI,Roboto,Arial;
+  background:var(--bg);
+  color:var(--text);
+}
+
+a{color:inherit;text-decoration:none}
+.container{max-width:1020px;margin:0 auto;padding:0 16px}
+
+.header{
+  position:sticky; top:0; z-index:50;
+  background:rgba(6,9,14,.70);
+  backdrop-filter: blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.header__row{
+  display:flex; align-items:center; justify-content:space-between;
+  gap:12px; padding:10px 0;
+}
+.brand{display:flex; align-items:center; gap:10px}
+.brand img{height:52px; width:auto; display:block; filter: drop-shadow(0 0 6px rgba(34,197,94,0.25));}
+
+
+.header__cta{display:flex; gap:8px; align-items:center}
+.btn{
+  display:inline-flex; align-items:center; justify-content:center;
+  padding:10px 14px;
+  border-radius:12px;
+  font-weight:900;
+  border:1px solid var(--line);
+}
+.btn--green{
+  background:linear-gradient(180deg,var(--accent),var(--accent2));
+  color:#05120a;
+  border-color:rgba(255,255,255,.08);
+}
+.btn--ghost{
+  background:rgba(255,255,255,.06);
+  color:var(--text);
+}
+.btn--small{padding:9px 12px; border-radius:11px}
+.btn--block{width:100%}
+.iconbtn{
+  width:40px;height:40px;border-radius:12px;
+  display:inline-flex;align-items:center;justify-content:center;
+  background:rgba(255,255,255,.06);
+  border:1px solid var(--line);
+  font-size:18px;
+}
+
+/* HERO */
+.hero{
+  position:relative;
+  min-height: 72vh;
+  padding: 28px 0 22px;
+  border-bottom:1px solid var(--line);
+
+  background-image:
+    linear-gradient(180deg, rgba(0,0,0,.68), rgba(0,0,0,.78)),
+    url("hero-bg.jpg");
+
+  background-size: cover, cover;
+  background-position: center, center;
+  background-repeat:no-repeat;
+  animation: drift 30s ease-in-out infinite alternate;
+}
+@keyframes drift{
+  from{ background-position:center, 45% 50%; }
+  to{ background-position:center, 55% 50%; }
+}
+
+.hero__grid{
+  display:grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap:14px;
+  align-items:stretch;
+}
+
+.glass{
+  background:rgba(12,16,22,.62);
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:18px;
+  backdrop-filter: blur(12px);
+  padding:18px;
+}
+.badge{
+  display:inline-flex;
+  gap:8px;
+  align-items:center;
+  padding:7px 12px;
+  border-radius:999px;
+  background:rgba(255,255,255,.07);
+  border:1px solid rgba(255,255,255,.12);
+  font-weight:900;
+  font-size:13px;
+}
+.hero h1{margin:12px 0 8px; font-size:34px; line-height:1.1}
+.hero .sub{color:var(--muted); margin:0; font-size:16px}
+.hero .brandline{margin:10px 0 0; color:rgba(229,231,235,.92)}
+.hero__buttons{display:flex; gap:10px; margin-top:14px; flex-wrap:wrap}
+.hero__buttons .btn{padding:12px 16px; font-size:16px}
+.hero__mini{
+  display:grid; grid-template-columns: repeat(3,1fr);
+  gap:8px; margin-top:14px;
+}
+.mini{
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.10);
+  border-radius:14px;
+  padding:10px;
+}
+.mini strong{display:block}
+.mini span{display:block; color:var(--muted); font-size:12px}
+
+/* Quick quote card */
+.card{
+  background:rgba(12,16,22,.62);
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:18px;
+  padding:16px;
+  backdrop-filter: blur(10px);
+}
+.card h3{margin:0 0 6px}
+.muted{color:var(--muted)}
+label{display:block; margin-top:10px; font-weight:800; font-size:13px}
+input,textarea{
+  width:100%;
+  margin-top:6px;
+  padding:11px 12px;
+  border-radius:12px;
+  border:1px solid rgba(255,255,255,.12);
+  background:rgba(255,255,255,.06);
+  color:var(--text);
+  outline:none;
+}
+textarea{min-height:96px; resize:vertical}
+small{color:var(--muted)}
+
+/* Sections */
+.section{padding:22px 0}
+.section__title{
+  display:flex; align-items:flex-end; justify-content:space-between;
+  gap:10px; margin-bottom:12px;
+}
+.section__title h2{margin:0; font-size:18px}
+.section__title p{margin:0; color:var(--muted); font-size:13px}
+
+.grid3{
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  gap:12px;
+}
+.tile{
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.10);
+  border-radius:18px;
+  padding:14px;
+}
+.tile__top{display:flex; align-items:center; gap:10px}
+.ico{
+  width:38px;height:38px;border-radius:14px;
+  background:rgba(34,197,94,.14);
+  border:1px solid rgba(34,197,94,.22);
+  display:flex;align-items:center;justify-content:center;
+  font-size:18px;
+}
+.tile h3{margin:0; font-size:15px}
+.tile p{margin:8px 0 0; color:var(--muted); font-size:13px}
+.list{margin:10px 0 0; padding-left:18px; color:var(--muted); font-size:13px}
+.list li{margin:6px 0}
+
+/* Serving area strip */
+.strip{
+  background:rgba(255,255,255,.03);
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+  padding:14px 0;
+}
+.pills{display:flex; gap:8px; flex-wrap:wrap; margin-top:10px}
+.pill{
+  padding:7px 10px;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,.10);
+  background:rgba(255,255,255,.05);
+  color:var(--muted);
+  font-weight:800;
+  font-size:12px;
+}
+
+/* Footer */
+.footer{
+  padding:18px 0 26px;
+  color:var(--muted);
+  border-top:1px solid var(--line);
+  background:rgba(255,255,255,.02);
+}
+.footer__box{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:12px;
+  align-items:start;
+}
+.footer strong{color:var(--text)}
+.footer .btn{margin-top:10px}
+
+@media (max-width: 920px){
+  .hero__grid{grid-template-columns:1fr}
+  .grid3{grid-template-columns:1fr}
+  .hero h1{font-size:30px}
+  .hero__mini{grid-template-columns:1fr}
+  .header__cta .btn{display:none}
+  .header__cta .iconbtn{display:inline-flex}
+  .footer__box{grid-template-columns:1fr} } </style>
+</head>
+
+<body>
+
+<header class="header">
+  <div class="container header__row">
+    <a class="brand" href="#top" id="top">
+      <img src="logo.png" alt="Freshwater Plumbing logo">
+    </a>
+
+    <div class="header__cta">
+      <a class="btn btn--green btn--small" href="tel:+18186057343">Call Now</a>
+      <a class="btn btn--ghost btn--small" href="sms:+18186057343">Text Us</a>
+      <a class="iconbtn call-yellow" href="tel:+18186057343" title="Call">📞</a>
+      <a class="iconbtn" href="sms:+18186057343" title="Text">💬</a>
+      <a class="iconbtn" href="https://www.tiktok.com/@freshwaterplumbing" target="_blank" rel="noopener" title="TikTok">🎵</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero__grid">
+    <div class="glass">
+      <div class="badge">Water Heater Specialist • Tank + Tankless</div>
+
+      <h1>Freshwater Plumbing<br>Los Angeles</h1>
+
+      <p class="sub">
+        Specializing in <strong>water heater installation & repair</strong>, including tank and tankless systems.
+      </p>
+
+      <p class="brandline">
+        We install & service <strong>Bradford White</strong> and <strong>Noritz</strong> water heaters.
+      </p>
+
+      <div class="hero__buttons">
+        <a class="btn btn--green" href="tel:+18186057343">CALL NOW</a>
+        <a class="btn btn--ghost" href="sms:+18186057343">TEXT US</a>
+      </div>
+
+      <div class="hero__mini">
+        <div class="mini"><strong>Same-day</strong><span>When available</span></div>
+        <div class="mini"><strong>Upfront</strong><span>Clear pricing</span></div>
+        <div class="mini"><strong>LA Area</strong><span>Local service</span></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Quick Quote</h3>
+      <p class="muted" style="margin:0 0 8px;">Send details—this opens your email to send.</p>
+
+      <form id="quoteForm">
+        <label>Name
+          <input name="name" required placeholder="Your name">
+        </label>
+        <label>Phone
+          <input name="phone" placeholder="(818) 555-5555">
+        </label>
+        <label>What do you need?
+          <textarea name="message" required placeholder="Water heater install, tankless, leak repair, etc."></textarea>
+        </label>
+        <button class="btn btn--green btn--block" type="submit">Send</button>
+        <small>Goes to: freshwaterplumbingpro@gmail.com</small>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section__title">
+      <h2>Services</h2>
+      <p>Main focus: water heater installs & repairs.</p>
+    </div>
+
+    <div class="grid3">
+      <div class="tile">
+        <div class="tile__top">
+          <div class="ico">🔥</div>
+          <h3>Water Heater Install & Repair</h3>
+        </div>
+        <p>New installs, replacements, diagnostics, and repairs for standard tank water heaters.</p>
+        <ul class="list">
+          <li>Removal & replacement</li>
+          <li>Leak / pressure troubleshooting</li>
+          <li>Maintenance & part replacement</li>
+        </ul>
+      </div>
+
+      <div class="tile">
+        <div class="tile__top">
+          <div class="ico">⚡</div>
+          <h3>Tankless Water Heaters</h3>
+        </div>
+        <p>Upgrade to tankless or repair existing tankless systems.</p>
+        <ul class="list">
+          <li>New tankless installs</li>
+          <li>Service & repairs</li>
+          <li>Flush / descale maintenance</li>
+        </ul>
+      </div>
+
+      <div class="tile">
+        <div class="tile__top">
+          <div class="ico">🛠️</div>
+          <h3>Plumbing Repairs</h3>
+        </div>
+        <p>Reliable service for common plumbing needs across LA.</p>
+        <ul class="list">
+          <li>Water leak repairs</li>
+          <li>Gas leak repairs</li>
+          <li>Stoppages & rough-in plumbing</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="strip">
+  <div class="container">
+    <div class="section__title" style="margin-bottom:0;">
+      <h2>Serving Los Angeles & Surrounding Areas</h2>
+      <p>Call or text for availability.</p>
+    </div>
+    <div class="pills">
+      <span class="pill">Los Angeles</span>
+      <span class="pill">San Fernando Valley</span>
+      <span class="pill">East LA</span>
+      <span class="pill">West LA</span>
+      <span class="pill">Nearby Cities</span>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer__box">
+    <div>
+      <strong>Freshwater Plumbing</strong><br>
+      Los Angeles Area<br><br>
+      <strong>Phone:</strong> (818) 605-7343<br>
+      <strong>Email:</strong> freshwaterplumbingpro@gmail.com<br>
+      <strong>TikTok:</strong> @freshwaterplumbing
+      <br>
+      <a class="btn btn--green" href="tel:+18186057343">Call Now</a>
+      <a class="btn btn--ghost" href="sms:+18186057343">Text Us</a>
+    </div>
+
+    <div>
+      <strong>Fast Contact</strong>
+      <p class="muted" style="margin:8px 0 0;">Tap the button, or send a message using the Quick Quote form above.</p>
+      <p class="muted" style="margin:10px 0 0;">
+        Follow real installs on TikTok:
+        <a href="https://www.tiktok.com/@freshwaterplumbing" target="_blank" rel="noopener" style="color:var(--text); font-weight:900;">@freshwaterplumbing</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Mailto quick quote (no backend needed)
+  const BUSINESS_EMAIL = "freshwaterplumbingpro@gmail.com";
+  document.getElementById("quoteForm").addEventListener("submit", (e) => {
+    e.preventDefault();
+    const data = new FormData(e.target);
+    const name = (data.get("name") || "").toString().trim();
+    const phone = (data.get("phone") || "").toString().trim();
+    const msg = (data.get("message") || "").toString().trim();
+
+    const subject = encodeURIComponent(`Freshwater Plumbing - Quote request from ${name || "Website visitor"}`);
+    const body = encodeURIComponent(`Name: ${name}\nPhone: ${phone}\n\nMessage:\n${msg}\n`);
+    window.location.href = `mailto:${BUSINESS_EMAIL}?subject=${subject}&body=${body}`;
+  });
+</script>
+
+</body>
+</html>
